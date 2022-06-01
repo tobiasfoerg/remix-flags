@@ -33,9 +33,6 @@ export default function PublicLayout() {
             <Link className="paper-btn" to="/docs">
               Documentation
             </Link>
-            <Link className="paper-btn" to="/about">
-              About
-            </Link>
             {loggedIn ? (
               <>
                 <Link className="paper-btn" to="/dashboard">
