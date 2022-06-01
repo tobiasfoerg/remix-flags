@@ -1,9 +1,9 @@
 ---
-title: "remix-flags | API"
+title: "remix-flags | REST API"
 description: "REST API docs for remix-flags"
 ---
 
-# remix-flags API
+# REST API
 
 ## Authentication
 
