@@ -1,9 +1,18 @@
+import type { MetaFunction } from "remix";
 import { json } from "remix";
 import { useLoaderData } from "@remix-run/react";
 
 import type { LoaderFunction } from "~/types";
 
+export let meta: MetaFunction = (args) => {
+  let { title, description } = (args.data as LoaderData) || {};
+
+  return { title, description };
+};
+
 type LoaderData = {
+  title: string;
+  description: string;
   html: string;
 };
 
@@ -20,6 +29,8 @@ export let loader: LoaderFunction = async ({ params }) => {
   };
 
   return json<LoaderData>({
+    title: doc.attributes.title,
+    description: doc.attributes.description,
     html: doc.html,
   });
 };

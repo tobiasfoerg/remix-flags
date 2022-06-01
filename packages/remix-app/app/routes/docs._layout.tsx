@@ -1,7 +1,16 @@
+import type { MetaFunction } from "remix";
 import { json } from "remix";
 import { NavLink, Outlet, useLoaderData } from "@remix-run/react";
 
+export let meta: MetaFunction = (args) => {
+  let { title, description } = (args.data as LoaderData) || {};
+
+  return { title, description };
+};
+
 export type LoaderData = {
+  title: string;
+  description: string;
   html: string;
   navigation: { label: string; to: string }[];
 };
@@ -20,6 +29,8 @@ export let loader = async () => {
   };
 
   return json<LoaderData>({
+    title: doc.attributes.title,
+    description: doc.attributes.description,
     html: doc.html,
     navigation: doc.attributes.navigation,
   });

@@ -1,5 +1,5 @@
 ---
-title: "remix-flags | Documentation"
+title: "remix-flags | Docs"
 description: "Everything you need for successful feature flagging"
 navigation:
   - label: "Docs Home"
