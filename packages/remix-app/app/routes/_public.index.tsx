@@ -21,7 +21,10 @@ export default function Index() {
     <main>
       <div className="text-center">
         <h1>remix-flags</h1>
-        <h3>Everything you need for successful feature flagging</h3>
+        <h3>
+          <small>Eventually*</small> Everything you'll need for successful
+          feature flagging
+        </h3>
         {loggedIn ? (
           <p>
             <Link className="paper-btn" to="/dashboard">
