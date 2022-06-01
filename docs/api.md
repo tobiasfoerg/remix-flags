@@ -28,7 +28,7 @@ curl -X GET https://remix-flags.com/api/v1/flags/<project-id> \
 
 ### `/api/v1/flags/<project-id>`
 
-Returns a list of all flags for the given project.
+Returns a map of all flags for the given project.
 
 Request:
 
