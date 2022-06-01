@@ -1,0 +1,36 @@
+{
+  "name": "remix-app",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "types": "./build.d.ts",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix watch",
+    "lint": "eslint .",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "remix": "npm:@remix-run/cloudflare@deferred",
+    "@remix-run/react": "deferred",
+    "db": "*",
+    "isbot": "^3.5.0",
+    "nprogress": "^0.2.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.10.0",
+    "@remix-run/dev": "deferred",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "cloudflare-env": "*",
+    "eslint": "^8.15.0",
+    "eslint-config-custom": "*",
+    "remix-env": "*",
+    "remix-flat-routes": "^0.4.0",
+    "tsconfig": "*",
+    "typescript": "^4.6.4"
+  }
+}
