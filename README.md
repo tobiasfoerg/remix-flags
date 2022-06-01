@@ -1,6 +1,6 @@
-# Remix + Cloudflare Workers + DO + Turborepo
+# remix-flags
 
-A starter to get you up and going with Remix on Cloudflare with all the latest and greatest.
+Eventually* Everything you'll need for successful feature flagging
 
 ## What's inside?
 
