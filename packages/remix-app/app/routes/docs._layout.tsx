@@ -57,6 +57,20 @@ export default function DocsLayout() {
             ))}
           </div>
         </aside>
+        <footer className="paper">
+          <div className="row flex-center">
+            <p>
+              Made with 💛 by{" "}
+              <a
+                href="https://github.com/jacob-ebey"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Jacob
+              </a>
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
