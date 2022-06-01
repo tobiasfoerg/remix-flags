@@ -4,7 +4,7 @@ description: "Everything you need for successful feature flagging"
 navigation:
   - label: "Home"
     to: "/docs"
-  - label: "Features"
+  - label: "REST API"
     to: "/docs/api"
 ---
 
