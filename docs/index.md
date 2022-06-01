@@ -2,10 +2,10 @@
 title: "remix-flags"
 description: "Everything you need for successful feature flagging"
 navigation:
-  - name: "Home"
-    url: "/docs"
-  - name: "Features"
-    url: "/docs/api"
+  - label: "Home"
+    to: "/docs"
+  - label: "Features"
+    to: "/docs/api"
 ---
 
 # remix-flags
